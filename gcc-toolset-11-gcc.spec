@@ -150,7 +150,7 @@ License: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2
 # git --git-dir=gcc-dir.tmp/.git fetch --depth 1 origin %%{gitrev}
 # git --git-dir=gcc-dir.tmp/.git archive --prefix=%%{name}-%%{version}-%%{DATE}/ %%{gitrev} | xz -9e > %%{name}-%%{version}-%%{DATE}.tar.xz
 # rm -rf gcc-dir.tmp
-Source0: gcc-%{version}-%{DATE}.tar.xz
+Source0: https://github.com/rpmsoftwarecollection/gcc-toolset-11-gcc/releases/download/download/gcc-%{version}-%{DATE}.tar.xz
 Source1: https://gcc.gnu.org/pub/gcc/infrastructure/isl-%{isl_version}.tar.bz2
 Source2: http://www.multiprecision.org/mpc/download/mpc-%{mpc_version}.tar.gz
 Source3: ftp://ftp.stack.nl/pub/users/dimitri/doxygen-%{doxygen_version}.src.tar.gz
